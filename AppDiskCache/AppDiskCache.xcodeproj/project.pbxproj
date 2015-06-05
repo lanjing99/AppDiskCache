@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08ACB161B2040F80068D031 /* CCAppCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ACB151B2040F80068D031 /* CCAppCacheTest.m */; };
 		A0D801231B1E9D6E00DA189A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D801221B1E9D6E00DA189A /* main.m */; };
 		A0D801261B1E9D6E00DA189A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D801251B1E9D6E00DA189A /* AppDelegate.m */; };
 		A0D801291B1E9D6E00DA189A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D801281B1E9D6E00DA189A /* ViewController.m */; };
 		A0D8012C1B1E9D6E00DA189A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D8012A1B1E9D6E00DA189A /* Main.storyboard */; };
 		A0D8012E1B1E9D6E00DA189A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D8012D1B1E9D6E00DA189A /* Images.xcassets */; };
 		A0D801311B1E9D6E00DA189A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D8012F1B1E9D6E00DA189A /* LaunchScreen.xib */; };
-		A0D8013D1B1E9D6F00DA189A /* AppDiskCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8013C1B1E9D6F00DA189A /* AppDiskCacheTests.m */; };
+		A0D8013D1B1E9D6F00DA189A /* HLDiskCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8013C1B1E9D6F00DA189A /* HLDiskCacheTests.m */; };
 		A0D8016E1B1EA4F200DA189A /* CCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8016B1B1EA4F200DA189A /* CCAppCache.m */; };
 		A0D8016F1B1EA4F200DA189A /* HLDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8016D1B1EA4F200DA189A /* HLDiskCache.m */; };
 		A0D801741B1ED24A00DA189A /* HLTestModelPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D801731B1ED24A00DA189A /* HLTestModelPerson.m */; };
@@ -34,6 +35,7 @@
 		400D3D4070C54EC0827BA940 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4124F92C3226050F1AB4667F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7600F5FEC4CEBA57D8F939D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A08ACB151B2040F80068D031 /* CCAppCacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppCacheTest.m; sourceTree = "<group>"; };
 		A0D8011D1B1E9D6E00DA189A /* AppDiskCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDiskCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D801211B1E9D6E00DA189A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D801221B1E9D6E00DA189A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		A0D801301B1E9D6E00DA189A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0D801361B1E9D6F00DA189A /* AppDiskCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDiskCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D8013B1B1E9D6F00DA189A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0D8013C1B1E9D6F00DA189A /* AppDiskCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDiskCacheTests.m; sourceTree = "<group>"; };
+		A0D8013C1B1E9D6F00DA189A /* HLDiskCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLDiskCacheTests.m; sourceTree = "<group>"; };
 		A0D8016A1B1EA4F200DA189A /* CCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppCache.h; sourceTree = "<group>"; };
 		A0D8016B1B1EA4F200DA189A /* CCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppCache.m; sourceTree = "<group>"; };
 		A0D8016C1B1EA4F200DA189A /* HLDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLDiskCache.h; sourceTree = "<group>"; };
@@ -122,7 +124,8 @@
 		A0D801391B1E9D6F00DA189A /* AppDiskCacheTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0D8013C1B1E9D6F00DA189A /* AppDiskCacheTests.m */,
+				A0D8013C1B1E9D6F00DA189A /* HLDiskCacheTests.m */,
+				A08ACB151B2040F80068D031 /* CCAppCacheTest.m */,
 				A0D801721B1ED24A00DA189A /* HLTestModelPerson.h */,
 				A0D801731B1ED24A00DA189A /* HLTestModelPerson.m */,
 				A0D8013A1B1E9D6F00DA189A /* Supporting Files */,
@@ -313,7 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D8013D1B1E9D6F00DA189A /* AppDiskCacheTests.m in Sources */,
+				A0D8013D1B1E9D6F00DA189A /* HLDiskCacheTests.m in Sources */,
+				A08ACB161B2040F80068D031 /* CCAppCacheTest.m in Sources */,
 				A0D801741B1ED24A00DA189A /* HLTestModelPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

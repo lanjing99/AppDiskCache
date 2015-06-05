@@ -3,7 +3,7 @@
 //  Cupertino
 //
 //  Created by lanjing on 15/5/28.
-//  Copyright (c) 2015年 福建讯盟软件有限公司. All rights reserved.
+//  Copyright (c) 2015年 WaterWood. All rights reserved.
 //
 
 #import "HLDiskCache.h"
@@ -56,6 +56,11 @@
     {
         return;
     }
+    if([fileName length] == 0)
+    {
+        return;
+    }
+    
     NSString *directoryPath = [_diskCachePath stringByAppendingPathComponent:directory];
     if(![self.fileManager fileExistsAtPath:directoryPath])
     {
@@ -99,17 +104,17 @@
 
 -(void)clearAllCache
 {
-    [self clearCacheAtDirectory:nil];
+    [self clearCacheAtPath:nil];
 }
 
--(void)clearCacheAtDirectory:(NSString *)directory
+-(void)clearCacheAtPath:(NSString *)path
 {
-    NSString *path = [self filePathWithFileName:nil atDirectory:directory];
+    NSString *fullPath = [self filePathWithFileName:nil atDirectory:path];
     
     dispatch_async(self.ioQueue, ^{
-        if([self.fileManager fileExistsAtPath:path isDirectory:nil])
+        if([self.fileManager fileExistsAtPath:fullPath isDirectory:nil])
         {
-            [self.fileManager removeItemAtPath:path error:nil];
+            [self.fileManager removeItemAtPath:fullPath error:nil];
         }
 
     });

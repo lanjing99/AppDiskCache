@@ -3,7 +3,7 @@
 //  Cupertino
 //
 //  Created by lanjing on 15/5/28.
-//  Copyright (c) 2015年 福建讯盟软件有限公司. All rights reserved.
+//  Copyright (c) 2015年 WaterWood. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,7 +19,7 @@
 -(id)objectWithFileName:(NSString *)fileName;
 -(id)objectWithFileName:(NSString *)fileName atDirectory:(NSString *)directory;
 
--(void)clearCacheAtDirectory:(NSString *)directory;
+-(void)clearCacheAtPath:(NSString *)path;
 -(void)clearAllCache;
 
 -(NSString *)cacheDirectory;

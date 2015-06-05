@@ -17,11 +17,11 @@
 //暂时没有必要，因为目前使用的场景，读在启动的时候读，写是网络请求完成后写
 
 
-@interface AppDiskCacheTests : XCTestCase
+@interface HLDiskCacheTests : XCTestCase
 
 @end
 
-@implementation AppDiskCacheTests
+@implementation HLDiskCacheTests
 {
     HLDiskCache *_diskCache;
 }
@@ -145,7 +145,7 @@
 //         XCTAssert([[NSFileManager defaultManager] fileExistsAtPath:path]);
 //    }];
     
-    [_diskCache clearCacheAtDirectory:directory];
+    [_diskCache clearCacheAtPath:directory];
     
     XCTestExpectation *expectation1 = [self expectationWithDescription:@"person"];
     [expectation1 fulfill];
@@ -165,7 +165,7 @@
     [self createAndSaveObjectAtDirectory:directory withFileName:fileName];
     NSString *path = [_diskCache filePathWithFileName:fileName atDirectory:directory];
 //    XCTAssert([[NSFileManager defaultManager] fileExistsAtPath:path]);
-    [_diskCache clearCacheAtDirectory:directory];
+    [_diskCache clearCacheAtPath:directory];
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"person"];
     [expectation fulfill];
